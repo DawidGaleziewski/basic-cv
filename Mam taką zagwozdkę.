@@ -1,0 +1,25 @@
+Mam taką zagwozdkę. 
+Przenoszę sobie PSD znalezione na necie w ramach ćwiczeń.
+Problematyczna jest jedna część strony zamieszczona poniżej: 
+https://codepen.io/dawidgaleziewski/pen/oVwKbR
+
+Jak widać po środku znaduje się linia czasu na której są "koraliki" symbolizujące jakiś punkt w czasie,
+ od których odchodzą dymki.
+
+ Podszedłem do tego w ten sposób:
+ a) Rozkład dymków za pomocą flexboxa.
+ b) linia stworzona z elementu w liście, po dodaniu w ::after. position absolute tak by była pośrodku strony.
+ c) "koraliki" to odzielne elementy listy nakładające się na tą linię również position absolute
+
+Stwarza to problem w którympo ściśnięciu strony te dymki zaczną nachodzić na linię.
+Mogę to oczywiście naprawić dodając kilka @media. To wydaje się jednak droga w której kod będzie połatany wieloma @media.
+
+ Zastanawiam się czy w prawdziwym projekcie użyto by innego rozwiązania, przychodzi mi do głowy np:
+ 1. grid (zapewne najłatwiej).
+ 2. flexbox lecz linia ustawiona inaczej
+ 3. Podział prawych i lewych dymków w odzielne divy (to rozwiązało by chyba problem z najerzdzaniem na linię zupełnie gdyby wystylować border jednego z divów na taką linię).
+ 4. Inne rozwiązania.
+
+ Dodatkowo interesuje mnie czy podchodzę do samej lini rozsądnie. Czy w normalnej sytuacji był by to po prostu svg czy również wystylowane by to było w css.
+
+ Z góry dzięki za wszelkie podpowiedzi.
